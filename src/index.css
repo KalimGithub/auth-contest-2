@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:ital@1&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,93 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  
+  /* background-image: url('./Images/Rectangle\ 1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App{
+  /* background-image: url('./Images/Rectangle\ 2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 90vh; */
+}
+.signup{
+  display:flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  padding:30px  40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(192, 191, 191);
+  text-align: left;
+  /* background-image: url('./Images/Rectangle\ 2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; */
+}
+#welcome-text, #heading{
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+input{
+  padding: 10px;
+  margin: 20px 0px;
+  outline: none;
+  border: 1px solid rgb(172, 171, 171);
+  border-radius: 5px;
+  font-size:large;
+}
+
+button{
+  background-color: #554DF1;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px;
+}
+a{
+  color: #554DF1;
+  text-align: center;
+  text-decoration: none;
+}
+#no-account-text{
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 440px) and (max-width: 840px) {
+  .signup {
+      width: 100%;
+      font-size: medium;
+  }
+  #no-account-text{
+    font-size: small;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 440px) {
+  .signup {
+      width: 100%;
+      font-size: small;
+  }
+  input, button{
+    padding: 5px;
+    font-size: smaller;
+  }
+  #no-account-text{
+    font-size: smaller;
+    text-align: center;
+  }
 }
